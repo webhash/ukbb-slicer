@@ -59,6 +59,31 @@ python ukbiobank.py ~/ukbcsv/ukb40501.csv 31 -n 10000000  -st 1 -sc 1 -v 2
 
 #python ukbiobank.py ~/ukbcsv/common/ukb40500_cut_merged.csv 3 -n 10
 
+
+# get the kinship and ancestry information 
+#python ukbiobank.py /home/vaibhash/projects/rrg-danilobz/common/access_40k_UKB_holmes/csv/ukb40507.csv  "21017" -n 100000000  -sc 1  -v 1
+
+# get genetic sex and PCs
+#python ukbiobank.py /home/vaibhash/projects/def-danilobz/common/access_40k_UKB_holmes/ukb40504.csv  "22001,22009" -n 100000000  -st 1 -sc 1  -v 1
+
+# get all accelerometer average data 
+#python ukbiobank.py /home/vaibhash/projects/def-danilobz/common/access_40k_UKB_holmes/ukb40504.csv  "90004,90012,90013,90019,90020,90021,90022,90023,90024,90025,90027,90028,90029,90030,90031,90032,90033,90034,90035,90036,90037,90038,90039,90040,90041,90042,90043,90044,90045,90046,90047,90048,90049,90050" -n 100000000  -st 1 -sc 1  -v 1
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv "3,4,5,6,21,23" -ef ./eids.txt  -st 1 -v 0
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv "3,4,5,6,21,23" -ef ./all_eids.txt  -st 1 -sc 1
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv "3,4,5,6,21,23,47,48,49" -n 100000 -sc 1
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv "3,4,5,6,21,23" -n 10000 -v 1 -st 1
+
+# disable low_memory mode 
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv "3,4,5,6,21,23" -n 10000 -v 1 -st 1 -l 0
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv 3 -n 10 -v 2 -sc 1
+
+#python ukbiobank.py ~/projects/def-danilobz/common/ukb40500_cut_merged.csv 3 -n 10 
+
 check_status $? python-utility
 
 echo "---------------------"
